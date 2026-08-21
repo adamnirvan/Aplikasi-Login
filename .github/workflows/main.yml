@@ -2,12 +2,16 @@ name: JSDoc build on GitHub repo
 
 on: [push, workflow_dispatch]
 
+permissions:
+  contents: write
+  pages: write
+  
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           ref: 02-solution-study-case
       
