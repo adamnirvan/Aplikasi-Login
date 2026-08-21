@@ -2,10 +2,6 @@ name: JSDoc build on GitHub repo
 
 on: [push, workflow_dispatch]
 
-permissions:
-  contents: write
-  pages: write
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
